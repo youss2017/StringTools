@@ -156,8 +156,13 @@ std::string st_Trim(const std::string& s)
 		if (s[offsetEnd - 1] != ' ' && s[offsetEnd - 1] != '\t')
 			break;
 	}
-	std::string trimed;
-	trimed.resize((offsetEnd - offsetStart) + 1, 0);
-	memcpy(&trimed[0], &s[offsetStart], offsetEnd - offsetStart);
-	return trimed;
+	if (offsetEnd > offsetStart) {
+		std::string trimed;
+		trimed.resize((offsetEnd - offsetStart) + 1, 0);
+		memcpy(&trimed[0], &s[offsetStart], offsetEnd - offsetStart);
+		return trimed;
+	}
+	else {
+		return "";
+	}
 }
