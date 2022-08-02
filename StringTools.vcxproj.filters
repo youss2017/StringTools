@@ -21,9 +21,15 @@
     <ClCompile Include="stringtool.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="fileutil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stringtool.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fileutil.hpp">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>
