@@ -5,8 +5,8 @@
 
 namespace utility {
 
-	bool WriteBinaryFile(std::string_view path, void* data, uint64_t size);
-	bool WriteTextFile(std::string_view path, char* text, uint64_t size);
+	bool WriteBinaryFile(std::string_view path, void* data, size_t size);
+	bool WriteTextFile(std::string_view path, char* text, size_t size);
 
 	/// <summary>
 	/// Reads file binary into vector. First element in vector determines success status.
